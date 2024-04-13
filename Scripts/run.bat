@@ -1,0 +1,1 @@
+docker run -v %cd%:/app gdrive-upload-backup
