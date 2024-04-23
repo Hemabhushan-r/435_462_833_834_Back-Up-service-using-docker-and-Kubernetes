@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: gdrive-backup-job
+spec:
+  schedule: "0 0 * * *"  # Runs daily at midnight (adjust as needed)
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+          - name: gdrive-backup
+            image: gdrive-upload-backup  # Replace with your image tag if different
+            volumeMounts:
+            - name: backup-data  # Adjust volume mount name if needed
+              mountPath: /app  # Adjust mount path if needed
+          volumes:
+          - name: backup-data  # Adjust volume name if needed
+            persistentVolumeClaim:
+              claimName: backup-pvc  # Adjust PVC name if needed
