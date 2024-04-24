@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: gdrive-backup-job
 spec:
-  schedule: "*/2 * * * *"  # Runs daily at midnight (adjust as needed)
+  schedule: "*/1 * * * *"  # Runs daily at midnight (adjust as needed)
   jobTemplate:
     spec:
       template:
@@ -11,13 +11,13 @@ spec:
           restartPolicy: OnFailure
           containers:
           - name: gdrive-backup
-            image: hemabhushan/gdrive-upload-backup:latest  # Replace with your image tag if different
+            image: gdrive-upload-backup  # Replace with your image tag if different
             imagePullPolicy: IfNotPresent
             volumeMounts:
             - name: backup-data  # Adjust volume mount name if needed
-              mountPath: /app  # Adjust mount path if needed
+              mountPath: app  # Adjust mount path if needed
             - name: credentials
-              mountPath: /app/Credentials
+              mountPath: app/Credentials
           volumes:
           - name: backup-data  # Adjust volume name if needed
             persistentVolumeClaim:
