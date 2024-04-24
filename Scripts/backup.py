@@ -1,3 +1,5 @@
+import json
+import pickle
 import google.auth
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
@@ -6,18 +8,28 @@ from google.oauth2 import service_account
 import io
 import os
 from mimetypes import MimeTypes
+import logging
 
-
+logging.basicConfig(filename='back.log', level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 # Define the Google Drive API scopes and service account file path
 SCOPES = ['https://www.googleapis.com/auth/drive']
-SERVICE_ACCOUNT_FILE = "./flutterchatapp-60a2a-53b5f344f20c.json"
+# SERVICE_ACCOUNT_FILE = "./flutterchatapp-60a2a-53b5f344f20c.json"
 
 # Create credentials using the service account file
-credentials = service_account.Credentials.from_service_account_file(
-    SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+# credentials = service_account.Credentials.from_service_account_file(
+#    SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
-# Build the Google Drive service
-drive_service = build('drive', 'v3', credentials=credentials)
+
+def init_drive():
+    global drive_service
+    with open("./Credentials/google-token.pkl", "rb") as f:
+        credentials = pickle.load(f)
+    credentials = json.loads(credentials)
+    credentials = service_account.Credentials.from_service_account_info(
+        credentials)
+    # Build the Google Drive service
+    drive_service = build('drive', 'v3', credentials=credentials)
 
 
 def upload_basic(file_name, file_directory, upload_directory_id):
@@ -39,12 +51,32 @@ def upload_basic(file_name, file_directory, upload_directory_id):
         media = MediaFileUpload(
             file_directory, mimetype=mime_type, resumable=True)
         # pylint: disable=maybe-no-member
-        file = (
-            drive_service.files()
-            .create(body=file_metadata, media_body=media, fields="id")
-            .execute()
-        )
-        print(f'File ID: {file.get("id")}')
+        logging.info(
+            f"Checking if file '{file_name}' already exists in Google Drive")
+        response = drive_service.files().list(
+            q=f"name='{file_name}' and parents='{upload_directory_id}' and trashed=false",
+            spaces='drive',
+            fields='nextPageToken, files(id, name)',
+            pageToken=None).execute()
+
+        if not response['files']:
+            logging.info(f"File '{file_name}' not found.Uploading new file...")
+            file = (
+                drive_service.files()
+                .create(body=file_metadata, media_body=media, fields="id")
+                .execute()
+            )
+            logging.info(f"File '{file_name}' uploaded successfully")
+            # print(f'File ID: {file.get("id")}')
+        else:
+            for file in response.get('files', []):
+                logging.info(
+                    f"File '{file_name}' found. Updating existing file...")
+                update_file = drive_service.files().update(
+                    fileId=file.get('id'),
+                    media_body=media,
+                ).execute()
+                logging.info(f"File '{file_name}' Updated.")
 
     except HttpError as error:
         print(f"An error occurred: {error}")
@@ -66,7 +98,7 @@ def create_folder(folder_name, parent_folder_id=None):
         fields='id'
     ).execute()
 
-    print(f'Created Folder ID: {created_folder["id"]}')
+    # print(f'Created Folder ID: {created_folder["id"]}')
     return created_folder["id"]
 
 
@@ -119,14 +151,17 @@ def upload_directory(directory_path, upload_directory_id):
         for file_name in files:
             file_path = os.path.join(root, file_name)
             # print("file", file_path)
+            logging.info(f"Processing File : '{file_name}'")
             upload_basic(file_name, file_path, upload_directory_id)
 
         for dir_name in dirs:
             dir_path = os.path.join(root, dir_name)
             # print("dir", dir_path)
             # dir_metadata = {"name": dir_name, "parents": [upload_directory_id]}
+            logging.info(f"Processing Directory '{dir_name}'")
             new_folder_id = create_folder(dir_name, upload_directory_id)
             upload_directory(dir_path, new_folder_id)
+            logging.info(f"Completed Processing Directory '{dir_name}'")
         break
 
 
@@ -134,8 +169,9 @@ if __name__ == '__main__':
     for dir, folders, files in os.walk("./TargetDirectory"):
         pass
         # print(dir, folders, files)
-
+    init_drive()
     upload_directory("./TargetDirectory", "1kAXUCXfxjLNLDm-OV6DNuZd8A5wcDRkr")
+    logging.info(f"Completed Backup Process")
     # Example usage:
 
     # Create a new folder

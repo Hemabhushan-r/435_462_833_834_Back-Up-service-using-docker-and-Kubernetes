@@ -3,9 +3,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: backup-pvc  # Replace with a descriptive name for your PVC
 spec:
+  storageClassName: manual
   accessModes:
     - ReadWriteOnce  # Adjust if needed (e.g., ReadWriteMany for multi-pod access)
   resources:
     requests:
-      storage: 1Gi  # Adjust storage size as needed
-  storageClassName: my-hostpath-storage  # Replace with your storage class name
+      storage: 2Gi  # Adjust storage size as needed
