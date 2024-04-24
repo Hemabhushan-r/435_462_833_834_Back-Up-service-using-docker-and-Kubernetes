@@ -11,7 +11,7 @@ spec:
           restartPolicy: OnFailure
           containers:
           - name: gdrive-backup
-            image: gdrive-upload-backup  # Replace with your image tag if different
+            image: hemabhushan/gdrive-upload-backup:latest  # Replace with your image tag if different
             imagePullPolicy: IfNotPresent
             volumeMounts:
             - name: backup-data  # Adjust volume mount name if needed
