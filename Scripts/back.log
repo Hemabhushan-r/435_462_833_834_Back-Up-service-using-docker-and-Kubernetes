@@ -1,0 +1,194 @@
+2024-04-24 12:13:13,035 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-24 12:13:15,466 - INFO - Processing Directory 'test'
+2024-04-24 12:13:18,247 - INFO - Processing File : 'file1.txt'
+2024-04-24 12:13:18,451 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-24 12:13:18,940 - INFO - File 'file1.txt' not found.Uploading new file...
+2024-04-24 12:13:21,281 - INFO - File 'file1.txt' uploaded successfully
+2024-04-24 12:13:21,282 - INFO - Completed Processing Directory 'test'
+2024-04-24 12:13:21,282 - INFO - Processing Directory 'test2'
+2024-04-24 12:13:22,154 - INFO - Completed Processing Directory 'test2'
+2024-04-24 12:13:22,155 - INFO - Completed Backup Process
+2024-04-24 10:46:14,984 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-24 10:46:15,054 - INFO - Processing Directory 'test'
+2024-04-24 10:46:17,342 - INFO - Processing File : 'file1.txt'
+2024-04-24 10:46:17,577 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-24 10:46:18,046 - INFO - File 'file1.txt' not found.Uploading new file...
+2024-04-24 10:46:20,321 - INFO - File 'file1.txt' uploaded successfully
+2024-04-24 10:46:20,323 - INFO - Completed Processing Directory 'test'
+2024-04-24 10:46:20,324 - INFO - Processing Directory 'test2'
+2024-04-24 10:46:21,218 - INFO - Completed Processing Directory 'test2'
+2024-04-24 10:46:21,219 - INFO - Completed Backup Process
+2024-04-24 10:47:16,870 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-24 10:47:16,884 - INFO - Processing Directory 'test'
+2024-04-24 10:47:19,049 - INFO - Processing File : 'file1.txt'
+2024-04-24 10:47:19,174 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-24 10:47:19,705 - INFO - File 'file1.txt' not found.Uploading new file...
+2024-04-24 10:47:21,805 - INFO - File 'file1.txt' uploaded successfully
+2024-04-24 10:47:21,808 - INFO - Completed Processing Directory 'test'
+2024-04-24 10:47:21,809 - INFO - Processing Directory 'test2'
+2024-04-24 10:47:22,691 - INFO - Completed Processing Directory 'test2'
+2024-04-24 10:47:22,692 - INFO - Completed Backup Process
+2024-04-25 06:11:43,002 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-25 06:11:43,050 - INFO - Processing Directory 'test'
+2024-04-25 06:11:45,936 - INFO - A folder with name 'test' already exists.
+2024-04-25 06:11:45,961 - INFO - Processing File : 'file1.txt'
+2024-04-25 06:11:46,058 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-25 06:11:46,589 - INFO - File 'file1.txt' found. Updating existing file...
+2024-04-25 06:11:53,791 - INFO - File 'file1.txt' Updated.
+2024-04-25 06:11:53,794 - INFO - Completed Processing Directory 'test'
+2024-04-25 06:11:53,795 - INFO - Processing Directory 'test2'
+2024-04-25 06:11:54,535 - INFO - A folder with name 'test2' already exists.
+2024-04-25 06:11:54,556 - INFO - Completed Processing Directory 'test2'
+2024-04-25 06:11:54,557 - INFO - Completed Backup Process
+2024-04-25 06:12:21,903 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-25 06:12:21,917 - INFO - Processing Directory 'test'
+2024-04-25 06:12:23,445 - INFO - A folder with name 'test' already exists.
+2024-04-25 06:12:23,456 - INFO - Processing File : 'file1.txt'
+2024-04-25 06:12:23,481 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-25 06:12:24,062 - INFO - File 'file1.txt' found. Updating existing file...
+2024-04-25 06:12:26,231 - INFO - File 'file1.txt' Updated.
+2024-04-25 06:12:26,235 - INFO - Completed Processing Directory 'test'
+2024-04-25 06:12:26,236 - INFO - Processing Directory 'test2'
+2024-04-25 06:12:26,738 - INFO - A folder with name 'test2' already exists.
+2024-04-25 06:12:26,773 - INFO - Completed Processing Directory 'test2'
+2024-04-25 06:12:26,774 - INFO - Completed Backup Process
+2024-04-25 06:13:13,174 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-25 06:13:13,190 - INFO - Processing Directory 'test'
+2024-04-25 06:13:14,409 - INFO - A folder with name 'test' already exists.
+2024-04-25 06:13:14,434 - INFO - Processing File : 'file1.txt'
+2024-04-25 06:13:14,451 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-25 06:13:14,928 - INFO - File 'file1.txt' found. Updating existing file...
+2024-04-25 06:13:16,904 - INFO - File 'file1.txt' Updated.
+2024-04-25 06:13:16,906 - INFO - Completed Processing Directory 'test'
+2024-04-25 06:13:16,908 - INFO - Processing Directory 'test2'
+2024-04-25 06:13:17,494 - INFO - A folder with name 'test2' already exists.
+2024-04-25 06:13:17,503 - INFO - Completed Processing Directory 'test2'
+2024-04-25 06:13:17,505 - INFO - Completed Backup Process
+2024-04-25 06:20:26,455 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-25 06:20:26,474 - INFO - Processing Directory 'test'
+2024-04-25 06:20:32,114 - INFO - A folder with name 'test' does not exist.Creating folder
+2024-04-25 06:20:33,278 - INFO - Processing File : 'file1.txt'
+2024-04-25 06:20:33,900 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-25 06:20:34,404 - INFO - File 'file1.txt' not found.Uploading new file...
+2024-04-25 06:20:37,378 - INFO - File 'file1.txt' uploaded successfully
+2024-04-25 06:20:37,381 - INFO - Completed Processing Directory 'test'
+2024-04-25 06:20:37,382 - INFO - Processing Directory 'test2'
+2024-04-25 06:20:37,971 - INFO - A folder with name 'test2' does not exist.Creating folder
+2024-04-25 06:20:39,032 - INFO - Completed Processing Directory 'test2'
+2024-04-25 06:20:39,032 - INFO - Completed Backup Process
+2024-04-25 06:21:30,252 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-25 06:21:30,289 - INFO - Processing Directory 'test'
+2024-04-25 06:21:38,682 - INFO - A folder with name 'test' already exists.
+2024-04-25 06:21:38,703 - INFO - Processing File : 'file1.txt'
+2024-04-25 06:21:38,903 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-25 06:21:39,431 - INFO - File 'file1.txt' found. Updating existing file...
+2024-04-25 06:21:41,423 - INFO - File 'file1.txt' Updated.
+2024-04-25 06:21:41,429 - INFO - Completed Processing Directory 'test'
+2024-04-25 06:21:41,430 - INFO - Processing Directory 'test2'
+2024-04-25 06:21:42,194 - INFO - A folder with name 'test2' already exists.
+2024-04-25 06:21:42,253 - INFO - Completed Processing Directory 'test2'
+2024-04-25 06:21:42,262 - INFO - Completed Backup Process
+2024-04-25 06:22:54,837 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-25 06:22:54,848 - INFO - Processing Directory 'test'
+2024-04-25 06:22:58,667 - INFO - A folder with name 'test' already exists.
+2024-04-25 06:22:58,686 - INFO - Processing File : 'file1.txt'
+2024-04-25 06:22:58,873 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-25 06:22:59,588 - INFO - File 'file1.txt' found. Updating existing file...
+2024-04-25 06:23:02,575 - INFO - File 'file1.txt' Updated.
+2024-04-25 06:23:02,577 - INFO - Completed Processing Directory 'test'
+2024-04-25 06:23:02,578 - INFO - Processing Directory 'test2'
+2024-04-25 06:23:03,488 - INFO - A folder with name 'test2' already exists.
+2024-04-25 06:23:03,728 - INFO - Completed Processing Directory 'test2'
+2024-04-25 06:23:03,729 - INFO - Completed Backup Process
+2024-04-25 06:38:22,362 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-25 06:38:22,421 - INFO - Processing Directory 'test'
+2024-04-25 06:38:24,151 - INFO - A folder with name 'test' already exists.
+2024-04-25 06:38:24,159 - INFO - Processing File : 'file1.txt'
+2024-04-25 06:38:24,215 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-25 06:38:24,733 - INFO - File 'file1.txt' found. Updating existing file...
+2024-04-25 06:38:27,126 - INFO - File 'file1.txt' Updated.
+2024-04-25 06:38:27,129 - INFO - Completed Processing Directory 'test'
+2024-04-25 06:38:27,130 - INFO - Processing Directory 'test2'
+2024-04-25 06:38:27,697 - INFO - A folder with name 'test2' already exists.
+2024-04-25 06:38:27,705 - INFO - Completed Processing Directory 'test2'
+2024-04-25 06:38:27,706 - INFO - Completed Backup Process
+2024-04-25 06:39:08,566 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-25 06:39:08,593 - INFO - Processing Directory 'test'
+2024-04-25 06:39:10,213 - INFO - A folder with name 'test' already exists.
+2024-04-25 06:39:10,224 - INFO - Processing File : 'file1.txt'
+2024-04-25 06:39:10,282 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-25 06:39:10,834 - INFO - File 'file1.txt' found. Updating existing file...
+2024-04-25 06:39:21,180 - INFO - File 'file1.txt' Updated.
+2024-04-25 06:39:21,183 - INFO - Completed Processing Directory 'test'
+2024-04-25 06:39:21,185 - INFO - Processing Directory 'test2'
+2024-04-25 06:39:21,766 - INFO - A folder with name 'test2' already exists.
+2024-04-25 06:39:21,775 - INFO - Completed Processing Directory 'test2'
+2024-04-25 06:39:21,776 - INFO - Completed Backup Process
+2024-04-25 06:40:10,716 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-25 06:40:10,784 - INFO - Processing Directory 'test'
+2024-04-25 06:40:12,537 - INFO - A folder with name 'test' already exists.
+2024-04-25 06:40:12,570 - INFO - Processing File : 'file1.txt'
+2024-04-25 06:40:12,603 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-25 06:40:13,099 - INFO - File 'file1.txt' found. Updating existing file...
+2024-04-25 06:40:15,514 - INFO - File 'file1.txt' Updated.
+2024-04-25 06:40:15,745 - INFO - Completed Processing Directory 'test'
+2024-04-25 06:40:15,764 - INFO - Processing Directory 'test2'
+2024-04-25 06:40:16,348 - INFO - A folder with name 'test2' already exists.
+2024-04-25 06:40:16,364 - INFO - Completed Processing Directory 'test2'
+2024-04-25 06:40:16,366 - INFO - Completed Backup Process
+2024-04-25 06:41:14,275 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-25 06:41:14,296 - INFO - Processing Directory 'test'
+2024-04-25 06:41:16,758 - INFO - A folder with name 'test' already exists.
+2024-04-25 06:41:16,991 - INFO - Processing File : 'file1.txt'
+2024-04-25 06:41:17,487 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-25 06:41:17,987 - INFO - File 'file1.txt' found. Updating existing file...
+2024-04-25 06:41:20,344 - INFO - File 'file1.txt' Updated.
+2024-04-25 06:41:20,350 - INFO - Completed Processing Directory 'test'
+2024-04-25 06:41:20,351 - INFO - Processing Directory 'test2'
+2024-04-25 06:41:20,989 - INFO - A folder with name 'test2' already exists.
+2024-04-25 06:41:21,013 - INFO - Completed Processing Directory 'test2'
+2024-04-25 06:41:21,015 - INFO - Completed Backup Process
+2024-04-25 06:55:09,700 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-25 06:55:09,728 - INFO - Processing Directory 'test'
+2024-04-25 06:55:11,382 - INFO - A folder with name 'test' already exists.
+2024-04-25 06:55:11,397 - INFO - Processing File : 'file1.txt'
+2024-04-25 06:55:11,414 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-25 06:55:11,916 - INFO - File 'file1.txt' found. Updating existing file...
+2024-04-25 06:55:14,280 - INFO - File 'file1.txt' Updated.
+2024-04-25 06:55:14,282 - INFO - Completed Processing Directory 'test'
+2024-04-25 06:55:14,282 - INFO - Processing Directory 'test2'
+2024-04-25 06:55:14,855 - INFO - A folder with name 'test2' already exists.
+2024-04-25 06:55:14,866 - INFO - Completed Processing Directory 'test2'
+2024-04-25 06:55:14,866 - INFO - Completed Backup Process
+2024-04-25 06:56:08,637 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-25 06:56:08,652 - INFO - Processing Directory 'test'
+2024-04-25 06:56:09,792 - INFO - A folder with name 'test' already exists.
+2024-04-25 06:56:09,811 - INFO - Processing File : 'file1.txt'
+2024-04-25 06:56:09,856 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-25 06:56:10,407 - INFO - File 'file1.txt' found. Updating existing file...
+2024-04-25 06:56:12,428 - INFO - File 'file1.txt' Updated.
+2024-04-25 06:56:12,431 - INFO - Completed Processing Directory 'test'
+2024-04-25 06:56:12,431 - INFO - Processing Directory 'test2'
+2024-04-25 06:56:12,961 - INFO - A folder with name 'test2' already exists.
+2024-04-25 06:56:12,972 - INFO - Processing File : 'file_test.txt'
+2024-04-25 06:56:13,011 - INFO - Checking if file 'file_test.txt' already exists in Google Drive
+2024-04-25 06:56:13,528 - INFO - File 'file_test.txt' not found.Uploading new file...
+2024-04-25 06:56:15,434 - INFO - File 'file_test.txt' uploaded successfully
+2024-04-25 06:56:15,440 - INFO - Completed Processing Directory 'test2'
+2024-04-25 06:56:15,449 - INFO - Completed Backup Process
+2024-04-25 06:57:15,187 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-04-25 06:57:15,223 - INFO - Processing Directory 'test'
+2024-04-25 06:57:17,093 - INFO - A folder with name 'test' already exists.
+2024-04-25 06:57:17,104 - INFO - Processing File : 'file1.txt'
+2024-04-25 06:57:17,138 - INFO - Checking if file 'file1.txt' already exists in Google Drive
+2024-04-25 06:57:17,639 - INFO - File 'file1.txt' found. Updating existing file...
+2024-04-25 06:57:19,964 - INFO - File 'file1.txt' Updated.
+2024-04-25 06:57:19,968 - INFO - Completed Processing Directory 'test'
+2024-04-25 06:57:19,969 - INFO - Processing Directory 'test2'
+2024-04-25 06:57:20,621 - INFO - A folder with name 'test2' already exists.
+2024-04-25 06:57:20,700 - INFO - Processing File : 'file_test.txt'
+2024-04-25 06:57:20,709 - INFO - Checking if file 'file_test.txt' already exists in Google Drive
+2024-04-25 06:57:21,372 - INFO - File 'file_test.txt' found. Updating existing file...
+2024-04-25 06:57:23,761 - INFO - File 'file_test.txt' Updated.
+2024-04-25 06:57:23,765 - INFO - Completed Processing Directory 'test2'
+2024-04-25 06:57:23,766 - INFO - Completed Backup Process

@@ -10,7 +10,7 @@ import os
 from mimetypes import MimeTypes
 import logging
 
-logging.basicConfig(filename='back.log', level=logging.INFO,
+logging.basicConfig(filename='./back.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 # Define the Google Drive API scopes and service account file path
 SCOPES = ['https://www.googleapis.com/auth/drive']
@@ -92,11 +92,23 @@ def create_folder(folder_name, parent_folder_id=None):
         "mimeType": "application/vnd.google-apps.folder",
         'parents': [parent_folder_id] if parent_folder_id else []
     }
+    results = drive_service.files().list(q=f"mimeType='application/vnd.google-apps.folder' and name='{folder_name}' and parents='{parent_folder_id}'",
+                                         spaces='drive',
+                                         fields='files(id, name)').execute()
 
-    created_folder = drive_service.files().create(
-        body=folder_metadata,
-        fields='id'
-    ).execute()
+    folders = results.get('files', [])
+    if folders:
+        logging.info(f"A folder with name '{folder_name}' already exists.")
+        for folder in folders:
+            return folder['id']
+            # print(f"Folder ID: {folder['id']}")
+    else:
+        logging.info(
+            f"A folder with name '{folder_name}' does not exist.Creating folder")
+        created_folder = drive_service.files().create(
+            body=folder_metadata,
+            fields='id'
+        ).execute()
 
     # print(f'Created Folder ID: {created_folder["id"]}')
     return created_folder["id"]

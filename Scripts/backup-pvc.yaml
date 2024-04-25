@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: backup-pvc  # Replace with a descriptive name for your PVC
 spec:
-  storageClassName: manual
+  storageClassName: hostpath
   accessModes:
     - ReadWriteOnce  # Adjust if needed (e.g., ReadWriteMany for multi-pod access)
   resources:

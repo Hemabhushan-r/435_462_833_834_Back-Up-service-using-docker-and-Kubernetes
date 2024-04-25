@@ -5,10 +5,10 @@ metadata:
   labels:
     type: local
 spec:
-  storageClassName: manual
+  storageClassName: hostpath
   capacity:
-    storage: 6Gi
+    storage: 3Gi
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/mnt/f/CC-MP/435_462_833_834_Back-Up-service-using-docker-and-Kubernetes/Scripts"
+    path: "/run/desktop/mnt/host/f/CC-MP/435_462_833_834_Back-Up-service-using-docker-and-Kubernetes/Scripts/"

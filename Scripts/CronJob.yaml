@@ -15,9 +15,9 @@ spec:
             imagePullPolicy: IfNotPresent
             volumeMounts:
             - name: backup-data  # Adjust volume mount name if needed
-              mountPath: app  # Adjust mount path if needed
+              mountPath: /app  # Adjust mount path if needed
             - name: credentials
-              mountPath: app/Credentials
+              mountPath: /app/Credentials
           volumes:
           - name: backup-data  # Adjust volume name if needed
             persistentVolumeClaim:
