@@ -8,6 +8,7 @@ Repository hosting code for Cloud Computing Mini Project
    ```sh
    pip install -r requirements.txt
    ```
+## Run the below command to Start the CronJob
 
 ## Contributors
 
